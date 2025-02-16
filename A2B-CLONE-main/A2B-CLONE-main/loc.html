@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="styleloc.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <style>
+    /* html, body {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+  background: linear-gradient(to bottom, #e6eb5e, #f8d868);
+    font-family: Arial, sans-serif;
+     /* Adjust based on top-banner and navbar height */
+}
+
+.top-banner {
+    background-color: blue;
+    text-align: center;
+    padding: 10px;
+   
+}
+
+.top-banner span {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.navbar {
+    position: absolute; /* Keeps navbar right below the banner */
+    position: sticky;
+    height: 100%;
+    
+    background: linear-gradient(180deg, #e6eb5e, #f8d868); /* Adjust the color as per your design */
+    
+}
+
+.navbar ul {
+    display: flex; /* Align items in a row */
+    list-style: none; /* Remove default bullet points */
+}
+
+.navbar ul li {
+    font-weight: 500;
+    font-size: large;
+    color: black;
+    padding: 2px 15px; /* Add padding for better spacing */
+    position: relative;
+    transition: color 0.3s, transform 0.3s; /* Smooth color and transform transition */
+}
+
+.navbar ul li:hover {
+    transform: translateY(-3px); /* Lift the item up slightly */
+}
+
+.navbar ul li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px; /* Thickness of the underline */
+    background: transparent; /* Default to transparent */
+    bottom: 0; /* Position at the bottom */
+    left: 0; /* Align to the left */
+    transition: background 0.3s; /* Smooth transition for background */
+    font-weight: bold;
+}
+
+.navbar ul li:hover::after {
+    background: black; /* Underline color on hover */
+}
+
+.nav-order-button {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+}
+
+.nav-order-button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.nav-order-button:hover::before {
+    width: 105%;
+}
+
+.nav-order-button:hover {
+    color: #111;
+}
+ </style>
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <span>House of Exclusive Indian Sweets & snacks | High Class Indian Vegetarian Restaurant</span>
+    </div>
+    
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container-fluid">
+            <a hreaf="index.html" class="navbar-brand">
+                <img src="./img2.png" class="img-fluid img-thumbnail" alt="Logo" style="max-width: 120px;">
+            </a>
+            <!-- Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="brandstory.html">Brand Story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="loc.html">Location</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="coe.html">Center of Excellence</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="career.html">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <!-- Order Online Button -->
+                    <button class="btn btn-primary nav-order-button">Order Online</button>
+                </div>
+            </div>
+            
+        </nav>
+    </header> 
+    </body>
+<style>
+
+  #newCarousel .carousel-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 700px; /* Limit height on large screens */
+    object-fit: contain; /* Ensure the entire image is visible */
+  }
+  
+
+  /* Responsive styling for smaller devices */
+  @media (max-width: 768px) {
+    #newCarousel .carousel-item img {
+      max-height: 300px; /* Reduce height on smaller screens */
+    }
+  }
+
+  /* Center the carousel and ensure smooth layout */
+  #newCarousel {
+    margin: 0 auto;
+    z-index: 10;
+  }
+
+  /* Optional: Add caption styling */
+  
+</style>
+
+<section id="newCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <!-- First Carousel Item -->
+    <div class="carousel-item active">
+      <img src="outlet-image-2.png" class="d-block w-100" alt="Food">
+      
+    </div>
+    <!-- Second Carousel Item -->
+    <div class="carousel-item">
+      <img src="outlet-image-2.png" class="d-block w-100" alt="Sweets">
+      
+    </div>
+    <!-- Third Carousel Item -->
+  </div>
+
+  <!-- Previous Button -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#newCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <!-- Next Button -->
+  <button class="carousel-control-next" type="button" data-bs-target="#newCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+  <!-- Optional Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#newCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#newCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#newCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+</section>
+
+  <!-- Cards Section Below Carousel -->
+<section class="cards-section mt-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Locations</h2>
+        <!-- First Row -->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="locations">
+                    <div class="location-card">
+                        <h2>AATHUR</h2>
+                        <br>
+                        <p>No: 82/6, A2, Thulakanoor Village, Attur Taluk, Salem, Tamil Nadu 636141</p>
+                        <hr> <!-- Line added -->
+                        <div class="directions text-center"> <!-- Centering the content -->
+                            <span>Get Directions:</span><br>
+                            <a href="https://www.google.com/maps/place/Adyar+Ananda+Bhavan+-+A2B/@11.5915545,78.6270774,17z/data=!3m1!4b1!4m6!3m5!1s0x3bab9dc6de388f13:0xdc07d3674f410263!8m2!3d11.5915545!4d78.6270774!16s%2Fg%2F11dfhy7znq?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                                <img src="google-maps.png" alt="Google Maps" style="width: 40px; height: 40px;"> <!-- Adjust icon size as needed -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="locations">
+                    <div class="location-card">
+                        <h2>ADYAR</h2>
+                        <br>
+                        <p>No: 9,LB Road,Near Adyar Manere,Shastri Nagar,Adyar,Chennai,Tamil Nadu 600020</p>
+                        <hr> <!-- Line added -->
+                        <div class="directions text-center">
+                            <span>Get Directions:</span><br>
+                            <a href="https://www.google.com/maps/search/Adyar+a2b+chennai/@13.006732,80.2592855,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                                <img src="google-maps.png" alt="Google Maps" style="width: 40px; height: 40px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="locations">
+                    <div class="location-card">
+                        <h2>ARCOT</h2>
+                        <br>
+                        <p>No: 64/1,2nd Street,Buransemedu,Apollo Hospital Bengaluru-Chennai Highway,Next to K.H,Arcot,Tamil Nadu 632503</p>
+                        <hr> <!-- Line added -->
+                        <div class="directions text-center">
+                            <span>Get Directions:</span><br>
+                            <a href="https://www.google.com/maps/place/Adyar+Ananda+Bhavan+-+A2B/@12.9130109,79.2953561,17z/data=!3m1!4b1!4m6!3m5!1s0x3bad35d4028d8a67:0x6b6f3f63c149b7c2!8m2!3d12.9130109!4d79.2953561!16s%2Fg%2F11bxg2xlyp?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                                <img src="google-maps.png" alt="Google Maps" style="width: 40px; height: 40px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="row mt-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="locations">
+                    <div class="location-card">
+                        <h2>ARIYANUR-SALEM</h2>
+                        <br>
+                        <p>No:SF/24/1A1,Part-C,Nallarayampatti,NH47,Coimbatore-Salem Highway,Ariyanur,Salem,Tamil Nadu 636308</p>
+                        <hr> <!-- Line added -->
+                        <div class="directions text-center">
+                            <span>Get Directions:</span><br>
+                            <a href="https://www.google.com/maps/place/Adyar+Ananda+Bhavan+-+A2B/@11.5915545,78.6270774,17z/data=!3m1!4b1!4m6!3m5!1s0x3bab9dc6de388f13:0xdc07d3674f410263!8m2!3d11.5915545!4d78.6270774!16s%2Fg%2F11dfhy7znq?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                                <img src="google-maps.png" alt="Google Maps" style="width: 40px; height: 40px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="locations">
+                    <div class="location-card">
+                        <h2>ASHOK NAGAR METRO</h2>
+                        <br>
+                        <p>Metro Station, Jawaharlal Nehru Road, Ashok Nagar, Opposite Udhayam Cinema</p>
+                        <hr> <!-- Line added -->
+                        <div class="directions text-center">
+                            <span>Get Directions:</span><br>
+                            <a href="https://www.google.com/maps/place/Adyar+Ananda+Bhavan+-+A2B/@13.035157,80.2105066,17z/data=!3m2!4b1!5s0x3a52579ee49f0f0d:0x319345b3b01dfa1d!4m6!3m5!1s0x3a5266e016d2f881:0x35e605a8b5237f35!8m2!3d13.035157!4d80.2105066!16s%2Fg%2F11f03tbvx3?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                                <img src="google-maps.png" alt="Google Maps" style="width: 40px; height: 40px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="locations">
+                    <div class="location-card">
+                        <h2>AVADI</h2>
+                        <br>
+                        <p>No: 245, New Military Road, Tirumalairajapuram, Avadi, Chennai, Tamil Nadu 600071</p>
+                        <hr> <!-- Line added -->
+                        <div class="directions text-center">
+                            <span>Get Directions:</span><br>
+                            <a href="https://www.google.com/maps/place/Adyar+Ananda+Bhavan+-+A2B/@13.1177765,80.0953506,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5289d453bb79bb:0x4f5b25ddfa84a441!8m2!3d13.1177765!4d80.0953506!16s%2Fg%2F11by_br53x?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                                <img src="google-maps.png" alt="Google Maps" style="width: 40px; height: 40px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <!-- Third Row -->
+<div class="row mt-4">
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="locations">
+            <div class="location-card">
+                <h2>AYANAMBAKKAM</h2>
+                <br>
+                <p>Church, Tank, Ayanambakkam Road, Ambattur, Chennai, Tamil Nadu 600053</p>
+                <hr> <!-- Horizontal line after paragraph -->
+                <div class="directions text-center">
+                    <span>Get Directions:</span><br>
+                    <a href="https://www.google.com/maps/search/Ayanambakkam+a2b+chennai/@13.0908344,80.146488,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                        <img src="google-maps.png" alt="Google Maps" style="width: 40px; height: 40px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="locations">
+            <div class="location-card">
+                <h2>CBE-GANDHIPURAM</h2>
+                <br>
+                <p>No: 313, Bharathiyar Road, New Siddhapudur, Coimbatore, Tamil Nadu 641044</p>
+                <hr> <!-- Horizontal line after paragraph -->
+                <div class="directions text-center">
+                    <span>Get Directions:</span><br>
+                    <a href="https://www.google.com/maps/search/cbe+gandhipuram+a2b/@11.0078317,76.9697288,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                        <img src="google-maps.png" alt="Google Maps" style="width: 40px; height: 40px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="locations">
+            <div class="location-card">
+                <h2>CBE-NAVAKARAI</h2>
+                <br>
+                <p>S F No: 218/3A3, Door No: 2/285 A-Palakkad National Highways, Navakarai, Mavuthampathi Village, Madukkarai, Coimbatore, Tamil Nadu 641105</p>
+                <hr> <!-- Horizontal line after paragraph -->
+                <div class="directions text-center">
+                    <span>Get Directions:</span><br>
+                    <a href="https://www.google.com/maps/search/cbe+navakarai+a2b/@10.9360489,76.9167791,12z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                        <img src="google-maps.png" alt="Google Maps" style="width: 40px; height: 40px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Fourth Row -->
+<div class="row mt-4">
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="locations">
+            <div class="location-card">
+                <h2>CENTRAL RAIL STATION</h2>
+                <br>
+                <p>Ground Floor, Gate No: 4 & 5, Chennai Central Railway Station, Chennai, Tamil Nadu 600003</p>
+                <hr> <!-- Horizontal line after paragraph -->
+                <div class="directions text-center">
+                    <span>Get Directions:</span><br>
+                    <a href="https://www.google.com/maps/search/cebtral+rail+statioin+chennai+a2b/@13.0855883,80.2800023,16z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                        <img src="google-maps.png" alt="Google Maps" style="width: 40px; height: 40px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="locations">
+            <div class="location-card">
+                <h2>CHEPAUK</h2>
+                <br>
+                <p>No: 4/353, Quaide Milleth Road, Triplicane High Road, Chepauk, Chennai, Tamil Nadu 600005</p>
+                <hr> <!-- Horizontal line after paragraph -->
+                <div class="directions text-center">
+                    <span>Get Directions:</span><br>
+                    <a href="https://www.google.com/maps/search/chepauk+a2b/@13.0855884,80.2800023,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                        <img src="google-maps.png" alt="Google Maps" style="width: 40px; height: 40px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="locations">
+            <div class="location-card">
+                <h2>CHIDAMBARAM</h2>
+                <br>
+                <p>No: 17 & 18, East Car Street, Chidambaram, Tamil Nadu 608001</p>
+                <hr> <!-- Horizontal line after paragraph -->
+                <div class="directions text-center">
+                    <span>Get Directions:</span><br>
+                    <a href="https://www.google.com/maps/place/Adyar+Ananda+Bhavan+-+A2B/@11.4014923,79.6958362,17z/data=!3m1!4b1!4m6!3m5!1s0x3a54c3d95edca983:0x6d3190b12ea89c04!8m2!3d11.4014923!4d79.6958362!16s%2Fg%2F11s10xvb_1?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                        <img src="google-maps.png" alt="Google Maps" style="width: 40px; height: 40px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Fifth Row -->
+<div class="row mt-4">
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="locations">
+            <div class="location-card">
+                <h2>CHINNAR</h2>
+                <br>
+                <p>NH44, NHAI-Way Side Amenities Complex, Chinnar, Tamil Nadu 635117</p>
+                <hr> <!-- Horizontal line after paragraph -->
+                <div class="directions text-center">
+                    <span>Get Directions:</span><br>
+                    <a href="https://www.google.com/maps/search/chinnar+-+A2B/@12.0200535,78.8805558,9z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                        <img src="google-maps.png" alt="Google Maps" style="width: 40px; height: 40px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="locations">
+            <div class="location-card">
+                <h2>CHROMPET</h2>
+                <br>
+                <p>No: 367, Chennai-Theni Highway, Chromepet, Chennai, Tamil Nadu 600044</p>
+                <hr> <!-- Horizontal line after paragraph -->
+                <div class="directions text-center">
+                    <span>Get Directions:</span><br>
+                    <a href="https://www.google.com/maps/place/Adyar+Ananda+Bhavan+-+A2B/@12.9574671,80.1433281,17z/data=!3m1!4b1!4m6!3m5!1s0x3a525fac2400d2ef:0x44d5316a65301620!8m2!3d12.9574671!4d80.1433281!16s%2Fg%2F1tfjtpwm?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                        <img src="google-maps.png" alt="Google Maps" style="width: 40px; height: 40px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="locations">
+            <div class="location-card">
+                <h2>CMRL-AIRPORT-2</h2>
+                <br>
+                <p>Unit No: 89, Chennai International Airport, Grand Southern Trunk Road, Meenambakkam, Chennai, Tamil Nadu 600016</p>
+                <hr> <!-- Horizontal line after paragraph -->
+                <div class="directions text-center">
+                    <span>Get Directions:</span><br>
+                    <a href="https://www.google.com/maps/search/CMRL-AIRPORT-2+A2B/@12.9574671,80.1433281,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                        <img src="google-maps.png" alt="Google Maps" style="width: 40px; height: 40px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<footer class="bg-light text-dark py-5">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-sm-12 col-md-3 mb-4">
+                <h5>PRODUCTS</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Sweets</a></li>
+                    <li><a href="#">Savouries</a></li>
+                    <li><a href="#">Restaurant</a></li>
+                    <li><a href="#">Retail</a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-12 col-md-3 mb-4">
+              <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="brandstory.html">Brandstory</a></li>
+                    <li><a href="coe.html">Center Of Excellence</a></li>
+                    <li><a href="#">Gifting</a></li>
+                    <li><a href="career.html">Careers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+           
+
+       
+            <div class="col-sm-12 col-md-3 mb-4">
+                <h5>Social Media</h5>
+                <ul class="list-unstyled">
+                  <li><a href="https://www.facebook.com/@a2b.officialpage/">Facebook</a></li>
+                  <li><a href="https://x.com/a2brestaurant?mx=2">Twitter</a></li>
+                  <li><a href="https://www.instagram.com/a2b.official/">Instagram</a></li>
+                  <li><a href="https://in.linkedin.com/company/adyar-anand">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+       
+        <div class="row align-items-center">
+            <div class="col-sm-12 col-md-6 mb-3 mb-md-0">
+                <h5>Follow Us</h5>
+                <a href="https://www.facebook.com/@a2b.officialpage/"><img src="facebook (1).png" alt="Facebook" class="me-2" width="24"></a>
+                <a href="https://x.com/a2brestaurant?mx=2"><img src="twitter.png" alt="Twitter" class="me-2" width="24"></a>
+                <a href="https://www.instagram.com/a2b.official/"><img src="instagram.png" alt="Instagram" class="me-2" width="24"></a>
+            </div>
+            <div class="col-sm-12 col-md-6 text-md-end">
+                <span class="text-muted">@A2B.All rights reserved.2024</span>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
+</body>

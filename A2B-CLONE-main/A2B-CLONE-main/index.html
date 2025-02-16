@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2B</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+    /* html, body {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+  background: linear-gradient(to bottom, #e6eb5e, #f8d868);
+    font-family: Arial, sans-serif;
+     /* Adjust based on top-banner and navbar height */
+}
+
+.top-banner {
+    background-color: blue;
+    text-align: center;
+    padding: 10px;
+   
+}
+
+.top-banner span {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.navbar {
+    position: absolute; /* Keeps navbar right below the banner */
+    position: sticky;
+    height: 100%;
+    
+    background: linear-gradient(180deg, #e6eb5e, #f8d868); /* Adjust the color as per your design */
+    
+}
+
+.navbar ul {
+    display: flex; /* Align items in a row */
+    list-style: none; /* Remove default bullet points */
+}
+
+.navbar ul li {
+    font-weight: 500;
+    font-size: large;
+    color: black;
+    padding: 2px 15px; /* Add padding for better spacing */
+    position: relative;
+    transition: color 0.3s, transform 0.3s; /* Smooth color and transform transition */
+}
+
+.navbar ul li:hover {
+    transform: translateY(-3px); /* Lift the item up slightly */
+}
+
+.navbar ul li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px; /* Thickness of the underline */
+    background: transparent; /* Default to transparent */
+    bottom: 0; /* Position at the bottom */
+    left: 0; /* Align to the left */
+    transition: background 0.3s; /* Smooth transition for background */
+    font-weight: bold;
+}
+
+.navbar ul li:hover::after {
+    background: black; /* Underline color on hover */
+}
+
+.nav-order-button {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+}
+
+.nav-order-button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.nav-order-button:hover::before {
+    width: 105%;
+}
+
+.nav-order-button:hover {
+    color: #111;
+}
+ </style>
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <span>House of Exclusive Indian Sweets & snacks | High Class Indian Vegetarian Restaurant</span>
+    </div>
+    
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container-fluid">
+            <a hreaf="index.html" class="navbar-brand">
+                <img src="./img2.png" class="img-fluid img-thumbnail" alt="Logo" style="max-width: 120px;">
+            </a>
+            <!-- Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="brandstory.html">Brand Story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="loc.html">Location</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="coe.html">Center of Excellence</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="career.html">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <!-- Order Online Button -->
+                    <button class="btn btn-primary nav-order-button">Order Online</button>
+                </div>
+            </div>
+            
+        </nav>
+    </header> 
+    </body>
+<style>
+
+  #newCarousel .carousel-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 700px; /* Limit height on large screens */
+    object-fit: contain; /* Ensure the entire image is visible */
+  }
+  
+
+  /* Responsive styling for smaller devices */
+  @media (max-width: 768px) {
+    #newCarousel .carousel-item img {
+      max-height: 300px; /* Reduce height on smaller screens */
+    }
+  }
+
+  /* Center the carousel and ensure smooth layout */
+  #newCarousel {
+    margin: 0 auto;
+    z-index: 10;
+  }
+
+  /* Optional: Add caption styling */
+  
+</style>
+
+<section id="newCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <!-- First Carousel Item -->
+    <div class="carousel-item active">
+      <img src="sss1.png" class="d-block w-100" alt="Food">
+      
+    </div>
+    <!-- Second Carousel Item -->
+    <div class="carousel-item">
+      <img src="ss2 (1).png" class="d-block w-100" alt="Sweets">
+      
+    </div>
+    <!-- Third Carousel Item -->
+    <div class="carousel-item">
+      <img src="sss3.png" class="d-block w-100" alt="Charts">
+      
+    </div>
+  </div>
+
+
+
+<!-- First Section -->
+<section>
+  <div class="full">
+    <div class="imgtxt1 text-center p-4">
+      <img src="./img2.png" alt="Image" class="img-fluid mb-3">
+      <h1>House of Exclusive Indian Sweets</h1>
+      <p class="px-3">
+        Explore our wide range of sweets, from timeless Indian classics to our innovative creations, perfect for
+        every occasion. Taste the love and passion of Adyar Ananda Bhavan in every bite.
+      </p>
+      <button type="button" class="btn btn-primary">READ MORE</button>
+    </div>
+    </div>
+  
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <img src="https://aabsweets.com/wp-content/themes/a2b/images/aab-sweets-snack-gallery-1.png" 
+          class="img-fluid img-thumbnail custom-img" alt="sweets">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <img src="https://aabsweets.com/wp-content/themes/a2b/images/aab-sweets-snack-gallery-2.png" 
+          class="img-fluid img-thumbnail custom-img" alt="sweets">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <img src="https://aabsweets.com/wp-content/themes/a2b/images/aab-sweets-snack-gallery-3.png" 
+          class="img-fluid img-thumbnail custom-img" alt="sweets">
+      </div>
+    </div>
+  </section>
+  
+  <!-- Second Section -->
+  <section class="mt-5">
+    <div class="imgtxt1 text-center p-4">
+      <img src="./img2.png" alt="Image" class="img-fluid mb-3">
+      <h1>High Class Indian Vegetarian Restaurant</h1>
+      <p class="px-3">
+        A2B restaurants have everything you would expect for a cozy meal time with your family. With an incredible
+        menu covering the widest vegetarian fare across cuisines, you’re sure to be spoilt for choice.
+      </p>
+      <button type="button" class="btn btn-primary">READ MORE</button>
+    </div>
+    <div class="row justify-content-center g-3 text-center">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <img src="https://aabsweets.com/wp-content/themes/a2b/images/aab-veg-restaurant-gallery-2.png" 
+            class="img-fluid img-thumbnail mx-auto d-block" alt="restaurant">
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <img src="https://aabsweets.com/wp-content/themes/a2b/images/aab-veg-restaurant-gallery-1.png" 
+            class="img-fluid img-thumbnail mx-auto d-block" alt="restaurant">
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <img src="https://aabsweets.com/wp-content/themes/a2b/images/aab-veg-restaurant-gallery-2.png" 
+            class="img-fluid img-thumbnail mx-auto d-block" alt="restaurant">
+    </div>
+</div>
+
+  </section>
+</div>
+<section class="container text-center py-4">
+  <div class="imgtxt1">
+    <img src="./img2.png" alt="Image" class="img-fluid mb-3">
+    <h1>The Taste of Joy!</h1>
+    <p class="px-3">
+      We have an extensive collection of packaged foods ranging from sweets, savouries, pickles, instant food mixes, 
+      and cooking masala found in the shelves of every single supermarket and departmental store in the country.
+    </p>
+    <button type="button" class="btn btn-primary">READ MORE</button>
+  </div>
+
+  <!-- Responsive Image Gallery -->
+  <div class="row justify-content-center g-3 mt-4">
+    <div class="col-12 col-sm-6 col-md-4">
+      <img src="https://aabsweets.com/wp-content/themes/a2b/images/aab-snack-gallery-1.png" 
+        class="img-fluid img-thumbnail" alt="sweets">
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+      <img src="https://aabsweets.com/wp-content/themes/a2b/images/aab-snack-gallery-2.png" 
+        class="img-fluid img-thumbnail" alt="sweets">
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+      <img src="https://aabsweets.com/wp-content/themes/a2b/images/aab-snack-gallery-3.png" 
+        class="img-fluid img-thumbnail" alt="sweets">
+    </div>
+  </div>
+</section>
+
+<!-- Gifts for Every Occasion Section -->
+<!-- Gifts for Every Occasion Section -->
+<style>
+  .custom-blue {
+    background-color: #053d79; /* Bootstrap Primary Blue */
+    color: white;
+  }
+</style>
+<section>
+<div class="box1 custom-blue py-5 mt-5">
+  <div class="container text-center">
+    <h1>Gifts for Every Occasion</h1>
+    <p class="px-3">
+      Adyar Ananda Bhavan’s wide selection of traditional sweets and savouries are the most perfect gifts you can give someone. 
+      Whether it’s a personal gift for a festival or occasion, or a corporate hamper, you’re sure to find the most suitable 
+      gift boxes for every budget and need.
+    </p>
+    <button type="button" class="btn btn-light">READ MORE</button>
+  </div>
+</div>
+</section>
+
+<!-- Tradition of Authentic Taste Section -->
+<style>
+  .pastel-yellow {
+    background-color: linear-gradient(to bottom, #f8d868, #f8d868); /* Soft pastel yellow */
+    color: black; /* Ensures text remains readable */
+  }
+</style>
+<section>
+<div class="box2 pastel-yellow py-5 mt-5">
+  <div class="container text-center">
+    <h1>A Tradition of Authentic Taste</h1>
+    <p class="px-3">
+      Our beloved founder, Late Sri. KS Thirupathi Raja, was a man of remarkable discipline, hard work, and 
+      indomitable will. Throughout his life, he battled hardships but remained unfazed. He held onto a singular belief that 
+      "hard work eventually pays." That belief is now what we call Adyar Ananda Bhavan.
+    </p>
+    <button type="button" class="btn btn-warning">READ MORE</button>
+  </div>
+</div>
+</section>
+<footer class="bg-light text-dark py-5">
+  <div class="container">
+      <div class="row">
+          <!-- Products Section -->
+          <div class="col-sm-12 col-md-3 mb-4">
+              <h5>PRODUCTS</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Sweets</a></li>
+                  <li><a href="#">Savouries</a></li>
+                  <li><a href="#">Restaurant</a></li>
+                  <li><a href="#">Retail</a></li>
+              </ul>
+          </div>
+
+          <!-- Products Section -->
+          <div class="col-sm-12 col-md-3 mb-4">
+              <h5>Products</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Air Force</a></li>
+                  <li><a href="#">Air Jordan</a></li>
+                  <li><a href="#">Blazer</a></li>
+                  <li><a href="#">Crater</a></li>
+                  <li><a href="#">Hippie</a></li>
+              </ul>
+          </div>
+
+          <!-- Social Media Section -->
+          <div class="col-sm-12 col-md-3 mb-4">
+              <h5>Social Media</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">LinkedIn</a></li>
+              </ul>
+          </div>
+      </div>
+
+      <hr>
+
+      <!-- Social Media Icons & Copyright -->
+      <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6 mb-3 mb-md-0">
+              <h5>Follow Us</h5>
+              <a href="#"><img src="facebook (1).png" alt="Facebook" class="me-2" width="24"></a>
+              <a href="#"><img src="twitter.png" alt="Twitter" class="me-2" width="24"></a>
+              <a href="#"><img src="instagram.png" alt="Instagram" class="me-2" width="24"></a>
+          </div>
+          <div class="col-sm-12 col-md-6 text-md-end">
+              <span class="text-muted">@A2B.All rights reserved.2024</span>
+          </div>
+      </div>
+  <style>
+    footer {
+    background-color: #f8f9fa; /* Light background color for the footer */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+footer .input-group {
+    max-width: 250px;
+    margin-bottom: 15px; /* Adjusted spacing */
+}
+
+footer .fIcon {
+    margin-right: 10px;
+}
+
+/* Flexbox for responsive layout */
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer .col-md-6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    footer .row {
+        text-align: center;
+    }
+
+    footer .col-md-6 {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    footer .col-md-3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+footer ul {
+    padding-left: 0; /* Remove default left padding */
+}
+
+footer ul li {
+    list-style-type: none; /* Remove bullet points */
+    display: block;        /* Ensure each list item takes up the full width and stacks vertically */
+    margin-bottom: 15px;   /* Optional: Add spacing between each list item */
+    width: 100%;           /* Ensure the list item takes up the full width of its container */
+}
+
+footer ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #000;           /* Set link color */
+}
+
+footer ul li a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+}
+footer {
+    background-color: transparent !important; /* Removes background color */
+  }
+  
+  footer .container-fluid {
+    background-color: transparent; /* Ensures container is also transparent */
+  }
+  .exclusive-list {
+    list-style-type: disc; /* Sets bullet points */
+    padding-left: 20px; /* Adds left padding */
+    margin-bottom: 20px; /* Adds margin below the list */
+    display: block; /* Ensure it displays as a block */
+}
+.form-section {
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.form-control, .form-select {
+    background-color: #F5DEB3;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-warning {
+    background-color: #FFC107; /* Adjust according to your theme */
+    border: none;
+    border-radius: 5px;
+}
+  </style>
+</footer>
+</body>
+</html>

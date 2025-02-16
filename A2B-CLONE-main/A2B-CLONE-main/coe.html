@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aabsweets.com</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="product.css">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+      /* body {
+          margin: 0;
+          background: linear-gradient(to bottom, #cbcac5, #e8e6e2);
+          font-family: Arial, sans-serif;
+      } */
+      .top-banner {
+          background-color: blue;
+          text-align: center;
+          padding: 10px;
+          
+      }
+      .top-banner span {
+          color: white;
+          font-size: 14px;
+          font-weight: bold;
+      }
+      .navbar {
+  background: linear-gradient(180deg, #e6eb5e, #f8d868);
+  height: 100px;
+  position: relative;
+  position: sticky;
+}
+
+.navbar ul {
+  display: flex; /* Align items in a row */
+  list-style: none; /* Remove default bullet points */
+}
+
+.navbar ul li {
+  font-weight: 500;
+  font-size: large;
+  color: black;
+  padding: 1px 15px; /* Add padding for better spacing */
+  position: relative;
+  transition: color 0.3s, transform 0.3s; /* Smooth color and transform transition */
+}
+
+.navbar ul li:hover {
+  transform: translateY(-3px); /* Lift the item up slightly */
+}
+
+.navbar ul li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px; /* Thickness of the underline */
+  background: transparent; /* Default to transparent */
+  bottom: 0; /* Position at the bottom */
+  left: 0; /* Align to the left */
+  transition: background 0.3s; /* Smooth transition for background */
+}
+
+
+.navbar ul li:hover::after {
+  background: black; /* Underline color on hover */
+}
+.nav-order-button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #17C3B2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17C3B2;
+}
+
+.nav-order-button::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17C3B2;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.nav-order-button:hover::before {
+  width: 105%;
+}
+
+.nav-order-button:hover {
+  color: #111;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Top Banner -->
+  <div class="top-banner">
+      <span>House of Exclusive Indian Sweets & snacks | High Class Indian Vegetarian Restaurant</span>
+  </div>
+  
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-light shadow">
+          <div class="container-fluid">
+              <!-- Logo -->
+              <a href="index.html" class="navbar-brand">
+                  <img src="./img2.png" class="img-fluid img-thumbnail" alt="Logo" style="max-width: 120px;">
+              </a>
+              <!-- Toggler Button for Mobile -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Navbar Links -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                      <li class="nav-item"><li class="nav-item">
+                          <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                          <a class="nav-link" href="brandstory.html">Brand Story</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="loc.html">Location</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="coe.html">Center of Excellence</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./product.html">Product</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="cart.html">Cart</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="career.html">Careers</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./contact.html">Contact Us</a>
+                      </li>
+                  </ul>
+                  <!-- Order Online Button -->
+                  <button class="btn btn-primary nav-order-button">Order Online</button>
+              </div>
+          </div>
+      </nav>
+  </header>
+  <style>
+    .nav-link#product {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .card {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .directions img {
+      width: 20px;
+      margin: 0 5px;
+    }
+
+    .center-excellence {
+      background-color: #F5DEB3;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .center-excellence h1 {
+      color: #002147;
+      font-weight: bold;
+    }
+
+    .center-excellence p {
+      color: #333;
+      font-size: 18px;
+    }
+
+    .center-excellence ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .center-excellence ul li {
+      color: #002147;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+
+    
+    footer {
+      background-color: transparent !important; /* Removes background color */
+    }
+
+    footer .container-fluid {
+      background-color: transparent; /* Ensures container is also transparent */
+    }
+  </style>
+</head>
+
+  <!-- Carousel Section -->
+  <section id="newCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="coe.png" class="d-block w-100" alt="Food">
+      </div>
+  
+  </section>
+
+  <!-- Center of Excellence Section -->
+  <section class="center-excellence">
+    <h1>Center Of Excellence</h1>
+    <p>
+        As part of our thought leadership and pursuit of excellence, we are working to create a CoE in Chennai. This initiative
+        will bring together talent from across domains in the food industry in a hi-tech expansive space.
+    </p>
+    <p>
+        By the end of 2023, we aim to create an inclusive ecosystem for aspiring entrepreneurs, food scientists, food researchers,
+        food process <br>machinery manufacturers, FMCG marketers, industry experts, large corporations, government organizations,
+        start-ups, NGOs, trusts, IT<br> professionals, and blockchain developers to converge in their pursuit of excellence.
+        By doing so we aim to identify and address challenges<br> across the board, covering sourcing and procuring raw materials,
+        optimizing logistics, enhancing supply chain management, automating<br> quality control, devising effective marketing
+        strategies, and maximizing customer satisfaction and retention.
+    </p>
+    <p>
+        We are already actively working on some of these goals. While some of them are on the verge of completion, others are
+        awaiting patent, copyright, and trademark approvals.
+    </p>
+    <ul class="exclusive-list">
+        <li class="exclusive-list-item">Food Process Engineering & Automation</li>
+        <li class="exclusive-list-item">Internet of Things (IoTs)</li>
+        <li class="exclusive-list-item">Food Retail Automation with Visual Computing (Front-End & Back-End Operations)</li>
+        <li class="exclusive-list-item">Multi-Entity - Single POS with ERP Integration (Patent & Trademark Application in progress)</li>
+        <li class="exclusive-list-item">Global Vegetarian Menu Development</li>
+    </ul>
+    
+    <style>
+        .exclusive-list {
+            list-style-type: disc; /* This sets bullet points */
+            padding-left: 20px; /* Adds spacing to the left for proper alignment */
+            margin-bottom: 20px; /* Adds spacing below the list */
+        }
+
+        .exclusive-list-item {
+            margin-bottom: 10px; /* Adds space between each list item */
+        }
+        
+
+    </style>
+</section>
+
+
+  <!-- Footer Section -->
+  <div class="footer">
+    <footer class="text-dark py-5">
+      <div class="container-fluid">
+          <div class="row">
+              <!-- Products Section -->
+              <div class="col-sm-12 col-md-3 mb-4">
+                  <h5>PRODUCTS</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Sweets</a></li>
+                      <li><a href="#">Savouries</a></li>
+                      <li><a href="#">Restaurant</a></li>
+                      <li><a href="#">Retail</a></li>
+                  </ul>
+              </div>
+  
+              <!-- Useful Links Section -->
+              <div class="col-sm-12 col-md-3 mb-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="brandstory.html">Brandstory</a></li>
+                    <li><a href="coe.html">Center Of Excellence</a></li>
+                    <li><a href="#">Gifting</a></li>
+                    <li><a href="career.html">Careers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+  
+          
+  
+              <!-- Social Media Section -->
+              <div class="col-sm-12 col-md-3 mb-4">
+                  <h5>Social Media</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="https://www.facebook.com/@a2b.officialpage/">Facebook</a></li>
+                    <li><a href="https://x.com/a2brestaurant?mx=2">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/a2b.official/">Instagram</a></li>
+                    <li><a href="https://in.linkedin.com/company/adyar-anand">LinkedIn</a></li>
+                  </ul>
+              </div>
+          </div>
+  
+          <hr>
+          <div class="row align-items-center">
+              <div class="col-sm-12 col-md-6 mb-3 mb-md-0">
+                  <h5>Follow Us</h5>
+                  <a href="https://www.facebook.com/@a2b.officialpage/"><img src="facebook (1).png" alt="Facebook" class="me-2" width="24"></a>
+                  <a href="https://x.com/a2brestaurant?mx=2"><img src="twitter.png" alt="Twitter" class="me-2" width="24"></a>
+                  <a href="https://www.instagram.com/a2b.official/"><img src="instagram.png" alt="Instagram" class="me-2" width="24"></a>
+              </div>
+              <div class="col-sm-12 col-md-6 text-md-end">
+                  <span class="text-muted">@A2B.All rights reserved.2024</span>
+              </div>
+          </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

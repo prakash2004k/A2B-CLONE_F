@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aabsweets.com</title>
+  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .nav-link#product {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .card {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .directions img {
+      width: 20px;
+      margin: 0 5px;
+    }
+
+    .center-excellence {
+      background-color: #F5DEB3;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .center-excellence h1 {
+      color: #002147;
+      font-weight: bold;
+    }
+
+    .center-excellence p {
+      color: #333;
+      font-size: 18px;
+    }
+
+    .center-excellence ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .center-excellence ul li {
+      color: #002147;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: transparent !important;
+    }
+
+    footer .container-fluid {
+      background-color: transparent;
+    }
+  </style>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+     
+body {
+  background: linear-gradient(to bottom, #e6eb5e, #f8d868);
+    font-family: Arial, sans-serif;
+     /* Adjust based on top-banner and navbar height */
+}
+
+      .top-banner {
+          background-color: blue;
+          text-align: center;
+          padding: 10px;
+          
+      }
+      .top-banner span {
+          color: white;
+          font-size: 14px;
+          font-weight: bold;
+      }
+      .navbar {
+  background: linear-gradient(180deg, #e6eb5e, #f8d868);
+  height: 100px;
+  position: relative;
+  position: sticky;
+}
+
+.navbar ul {
+  display: flex; /* Align items in a row */
+  list-style: none; /* Remove default bullet points */
+}
+
+.navbar ul li {
+  font-weight: 500;
+  font-size: large;
+  color: black;
+  padding: 1px 15px; /* Add padding for better spacing */
+  position: relative;
+  transition: color 0.3s, transform 0.3s; /* Smooth color and transform transition */
+}
+
+.navbar ul li:hover {
+  transform: translateY(-3px); /* Lift the item up slightly */
+}
+
+.navbar ul li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px; /* Thickness of the underline */
+  background: transparent; /* Default to transparent */
+  bottom: 0; /* Position at the bottom */
+  left: 0; /* Align to the left */
+  transition: background 0.3s; /* Smooth transition for background */
+}
+
+
+.navbar ul li:hover::after {
+  background: black; /* Underline color on hover */
+}
+.nav-order-button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #17C3B2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17C3B2;
+}
+
+.nav-order-button::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17C3B2;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.nav-order-button:hover::before {
+  width: 105%;
+}
+
+.nav-order-button:hover {
+  color: #111;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Top Banner -->
+  <div class="top-banner">
+      <span>House of Exclusive Indian Sweets & snacks | High Class Indian Vegetarian Restaurant</span>
+  </div>
+  
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-light shadow">
+          <div class="container-fluid">
+              <!-- Logo -->
+              <a href="index.html" class="navbar-brand">
+                  <img src="./img2.png" class="img-fluid img-thumbnail" alt="Logo" style="max-width: 120px;">
+              </a>
+              <!-- Toggler Button for Mobile -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Navbar Links -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="brandstory.html">Brand Story</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="loc.html">Location</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="coe.html">Center of Excellence</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./product.html">Product</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="cart.html">Cart</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="career.html">Careers</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./contact.html">Contact Us</a>
+                      </li>
+                  </ul>
+                  <!-- Order Online Button -->
+                  <button class="btn btn-primary nav-order-button">Order Online</button>
+              </div>
+          </div>
+      </nav>
+  </header>
+  <section id="newCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="job-page.png" class="d-block w-100" alt="Food">
+      </div>
+    </div>
+  </section>
+  <section class="career-section my-5" style="background-color: #F5DEB3; color: #002147;">
+    <div class="container">
+      <h1>Current Job Openings</h1>
+      <div class="accordion" id="jobAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Senior Executive Chef <span class="location">Location: Chennai, India</span>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#jobAccordion">
+            <div class="accordion-body" style="background-color: transparent; padding: 20px; font-size: 1.2em;">
+              <h5>Job Description:</h5>
+              <p>Are you passionate about creating delectable dishes that tempt taste buds? Join our culinary team as a Senior Executive Chef. In this role, you'll lead the kitchen, create new dishes, and maintain our high-quality standards.</p>
+              <h5>Qualifications:</h5>
+              <ul>
+                <li>Minimum 5 years of experience as a Chef</li>
+                <li>Culinary degree or equivalent certification</li>
+                <li>Strong leadership and teamwork skills</li>
+              </ul>
+              <button class="btn btn-primary" onclick="scrollToApplySection()">Apply Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Customer Service Associate <span class="location">Location: Bangalore, India</span>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#jobAccordion">
+            <div class="accordion-body" style="background-color: transparent; padding: 20px; font-size: 1.2em;">
+              <h5>Job Description:</h5>
+              <p>Join our team as a Customer Service Associate and be the face of our brand. You will handle customer inquiries, resolve issues, and ensure a high level of customer satisfaction.</p>
+              <h5>Qualifications:</h5>
+              <ul>
+                <li>Excellent communication skills</li>
+                <li>Previous customer service experience</li>
+                <li>Ability to work in a fast-paced environment</li>
+              </ul>
+              <button class="btn btn-primary" onclick="scrollToApplySection()">Apply Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Marketing Executive <span class="location">Location: Bangalore, India</span>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#jobAccordion">
+            <div class="accordion-body" style="background-color: transparent; padding: 20px; font-size: 1.2em;">
+              <h5>Job Description:</h5>
+              <p>We are looking for a creative Marketing Executive to join our team. You will develop marketing strategies, manage campaigns, and analyze market trends to increase brand awareness.</p>
+              <h5>Qualifications:</h5>
+              <ul>
+                <li>Bachelor's degree in Marketing or related field</li>
+                <li>Strong analytical and project management skills</li>
+                <li>Proven track record of successful marketing campaigns</li>
+              </ul>
+              <button class="btn btn-primary" onclick="scrollToApplySection()">Apply Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="applySection" class="form-section my-5" style="background-color: #002147; color: #ffffff;">
+    <div class="container">
+      <h2>Apply for a Position</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" required>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <select class="form-select" required>
+                    <option selected disabled>Applied for*</option>
+                    <option value="senior-chef">Senior Executive Chef</option>
+                    <option value="customer-service">Customer Service Associate</option>
+                    <option value="marketing-executive">Marketing Executive</option>
+                </select>
+            </div>
+        </div>
+        <div class="mb-3">
+          <label for="resume" class="form-label">Resume</label>
+          <input type="file" class="form-control" id="resume" required>
+        </div>
+        <button type="submit" class="btn btn-light">Submit Application</button>
+      </form>
+    </div>
+  </section>
+  <footer class="bg-light text-center text-lg-start">
+    <div class="container-fluid p-3" style="background-color: white;">
+      
+            <div class="container">
+                <div class="row">
+                    <!-- Products Section -->
+                    <div class="col-sm-12 col-md-3 mb-4">
+                        <h5>PRODUCTS</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Sweets</a></li>
+                            <li><a href="#">Savouries</a></li>
+                            <li><a href="#">Restaurant</a></li>
+                            <li><a href="#">Retail</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Products Section -->
+                    <div class="col-sm-12 col-md-3 mb-4">
+                        <h5>Products</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Air Force</a></li>
+                            <li><a href="#">Air Jordan</a></li>
+                            <li><a href="#">Blazer</a></li>
+                            <li><a href="#">Crater</a></li>
+                            <li><a href="#">Hippie</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Social Media Section -->
+                    <div class="col-sm-12 col-md-3 mb-4">
+                        <h5>Social Media</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <hr>
+        
+                <!-- Social Media Icons & Copyright -->
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6 mb-3 mb-md-0">
+                        <h5>Follow Us</h5>
+                        <a href="#"><img src="facebook (1).png" alt="Facebook" class="me-2" width="24"></a>
+                        <a href="#"><img src="twitter.png" alt="Twitter" class="me-2" width="24"></a>
+                        <a href="#"><img src="instagram.png" alt="Instagram" class="me-2" width="24"></a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 text-md-end">
+                        <span class="text-muted">@A2B.All rights reserved.2024</span>
+                    </div>
+                </div>
+            </div>
+  </footer>
+  
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> -->
+  <!-- <script>
+    function scrollToApplySection() {
+        const section = document.getElementById('applySection');
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script> -->
+</body>
+
+</html>

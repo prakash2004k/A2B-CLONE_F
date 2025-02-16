@@ -1,0 +1,252 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.upper {
+    height: 30px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.navbar {
+    background: linear-gradient(180deg, #e6eb5e, #f8d868);
+    height: 100px;
+    position: sticky;
+}
+
+.imgg {
+    width: 150px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    font-weight: 500;
+    font-size: large;
+    color: black;
+    padding: 20px 15px;
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar ul li:hover {
+    transform: translateY(-3px);
+}
+
+.navbar ul li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: transparent;
+    bottom: 0;
+    left: 0;
+    transition: background 0.3s;
+}
+
+.navbar ul li:hover::after {
+    background: black;
+}
+
+.imgtxt1 {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    color: #00378c;
+    margin-top: 70px;
+}
+
+.row img {
+    margin-left: 50%;
+    padding: 2px;
+}
+
+.box1, .box2 {
+    margin-top: 80px;
+    width: 100%;
+    height: 300px;
+    color: white;
+    text-align: center;
+}
+
+.box1 {
+    background-color: #1260c6;
+}
+
+.box1 h1, .box2 h1 {
+    padding-top: 30px;
+}
+
+.box1 p, .box2 p {
+    padding-top: 10px;
+    letter-spacing: 2px;
+}
+
+.box1 button, .box2 button {
+    margin-top: 20px;
+}
+
+.box2 {
+    background-color: #f8d868;
+    color: #00378C;
+}
+
+section img {
+    margin-top: 30px;
+}
+
+.nav-order-button {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+}
+
+.nav-order-button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.nav-order-button:hover::before {
+    width: 105%;
+}
+
+.nav-order-button:hover {
+    color: #111;
+}
+
+.product a {
+    color: white;
+    background-color: #00378C;
+    padding: 8px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.product a:hover {
+    color: #00378C;
+    background-color: white;
+}
+
+footer {
+    background-color: transparent !important;
+    padding: 40px 0;
+}
+
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer .input-group {
+    max-width: 250px;
+    margin-bottom: 15px;
+}
+
+footer .fIcon {
+    margin-right: 10px;
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer .col-md-6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.exclusive-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.form-section {
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.form-control, .form-select {
+    background-color: #F5DEB3;
+    border: none;
+    border-radius: 5px;
+}z
+
+.btn-warning {
+    background-color: #FFC107;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Stack navbar items vertically */
+    }
+
+    .box1, .box2 {
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    footer .row {
+        text-align: center;
+    }
+
+    footer .col-md-6 {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    footer .col-md-3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
